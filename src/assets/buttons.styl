@@ -1,0 +1,43 @@
+.g-button
+  appearance none
+  user-select none
+  margin calc(var(--base-pixel) * 2)
+  padding .5em .75em
+  background white
+  color black
+  text-shadow 0 var(--neg-base-text-stroke) rgba(black, .1)
+  box-shadow 0 calc(var(--base-pixel) * 2) 0 0 rgba(black, .1), inset var(--neg-base-text-stroke) var(--neg-base-text-stroke) 0 rgba(black, .25)
+  &:active
+    box-shadow 0 calc(var(--neg-base-pixel) * 2) 0 0 rgba(black, .1), inset var(--base-text-stroke) var(--base-text-stroke) 0 rgba(black, .25)
+    transform translate(0, var(--base-text-stroke))
+  &.g
+    &-primary
+      background var(--color-primary)
+      color white
+    &-success
+      background var(--color-success)
+      color white
+    &-warning
+      background var(--color-warning)
+      color white
+    &-error
+      background var(--color-error)
+      color white
+    &-disabled
+      pointer-events none
+      opacity .5
+    &-xs
+      font-size .8rem
+    &-sm
+      font-size 1rem
+    &-md
+      font-size 1.1rem
+    &-lg
+      font-size 1.35rem
+    &-xl
+      font-size 1.5rem
+  &-group
+    > *
+      margin-left 0
+      margin-right 0
+      

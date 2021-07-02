@@ -1,0 +1,28 @@
+.g-page
+  max-width 640px
+  padding 0 1em
+  margin 0 auto
+
+.g-boxed
+  border none
+  position relative
+  border-radius 0
+  box-sizing border-box
+  &:before
+    content ''
+    border-top var(--base-line)
+    border-bottom @border-top
+    position absolute
+    top var(--neg-base-pixel)
+    bottom var(--neg-base-pixel)
+    left 0
+    right @left
+  &:after
+    content ''
+    border-left var(--base-line)
+    border-right @border-left
+    position absolute
+    top 0
+    bottom @top
+    left var(--neg-base-pixel)
+    right var(--neg-base-pixel)
